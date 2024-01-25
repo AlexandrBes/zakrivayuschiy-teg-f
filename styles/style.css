@@ -96,13 +96,13 @@
   gap: 50px;
 }
 
-.main__section {
+.main__article {
   border: 2px solid;
   inline-size: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
   background-color: var(--background-color);
 }
 
-.section__title {
+.article__title {
   display: flex;
   inline-size: clamp(21.938rem, 15.093rem + 29.2vw, 41.375rem);
   font-weight: var(--title-font-weight);
@@ -112,12 +112,12 @@
   padding-block-end: 4px;
 }
 
-.section__image-container {
+.article__image-container {
   border-top: 2px solid;
   position: relative;
 }
 
-.section__label {
+.article__label {
   position: absolute;
   z-index: 1;
   right: 25px;
@@ -130,18 +130,18 @@
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
-  .section__label {
+  .article__label {
     -webkit-text-stroke: 0.1px var(--shadow__label);
   }
 }
 
 @media (width <= 375px) {
-  .section__label {
+  .article__label {
     right: 11px;
   }
 }
 
-.section__image {
+.article__image {
   inline-size: 100%;
   object-fit: cover;
   object-position: center;
@@ -180,21 +180,21 @@
   filter: brightness(2);
 }
 
-.section__text-container {
+.article__text-container {
   background-color: var(--background-color);
   padding-block-start: 27px;
   padding-inline: 25px;
   border-top: 2px solid;
 }
 
-.section__text {
+.article__text {
   font-size: 18px;
   padding-block-end: 26px;
   inline-size: var(--inline__text-size);
   font-weight: var(--text-font-weight);
 }
 
-.section__like-button-container {
+.article__like-button-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -269,14 +269,14 @@
   font-size: 14px;
 }
 
-.footer {
+.container__button {
   display: flex;
   justify-content: center;
   margin-block-start: 2px;
   margin-block-end: 105px;
 }
 
-.footer__button {
+.button__size {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -286,13 +286,13 @@
 }
 
 @media (width <= 375px) {
-  .footer__button {
+  .button__size {
     flex-direction: column;
     block-size: 80px;
   }
 }
 
-.footer__text-button {
+.text__button {
   font-family: var(--alt__font);
   font-size: 14px;
 }
@@ -330,7 +330,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.dialog__section {
+.dialog__article {
   display: grid;
   justify-items: center;
 }
